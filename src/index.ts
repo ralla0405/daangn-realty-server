@@ -4,7 +4,7 @@ import express from 'express';
 import { User } from "./entity/User"
 import { graphqlHTTP } from 'express-graphql';
 import { buildSchema } from 'type-graphql';
-import { UserResolver } from './resolvers/UserResolver';
+import { UserResolver } from './realty/resolvers/UserResolver';
 
 createConnection().then(async connection => {
     console.log("Inserting a new user into the database...");

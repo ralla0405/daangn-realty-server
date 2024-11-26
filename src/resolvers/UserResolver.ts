@@ -1,5 +1,5 @@
 import { Resolver, Query, Mutation, Arg } from 'type-graphql';
-import { User } from '../entity/User';
+import { User } from '../../entity/User';
 import { getRepository } from 'typeorm';
 
 @Resolver()
