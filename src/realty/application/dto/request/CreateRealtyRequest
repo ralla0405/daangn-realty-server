@@ -1,0 +1,30 @@
+import { AuthorType } from "../../../domain/AuthorType";
+import { RealtyType } from "../../../domain/RealtyType";
+import { TransactionType } from "../../../domain/TransactionType";
+import { AvailableType } from "../../../domain/AvailableType";
+import { Field, InputType } from "type-graphql";
+
+@InputType()
+export class CreateRealtyRequest {
+    authorType: AuthorType;
+    realtyType: RealtyType;
+    realtyOtherName?: string;
+    address: string;
+    locationDescription?: string;
+    transactionType: TransactionType;
+    deposit: number;
+    monthlyRent?: number;
+    exclusiveArea: number;
+    supllyArea?: number;
+    numberOfRooms?: number;
+    numberOfBathrooms?: number;
+    totalFloors?: number;
+    currentFloor?: number;
+    maintenanceFee: number;
+    loanAvailable: AvailableType;
+    petsAvailable: AvailableType;
+    parkingAvailable: AvailableType;
+    realtyDescription?: string;
+
+
+}
